@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.presentation.detail.PokemonDetailViewModelTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-01-20T20:42:35" hostname="192.168.2.28" time="0.892">
+  <properties/>
+  <testcase name="uiState emits success when usecase returns detail" classname="com.example.presentation.detail.PokemonDetailViewModelTest" time="0.878"/>
+  <testcase name="uiState emits error when usecase throws exception" classname="com.example.presentation.detail.PokemonDetailViewModelTest" time="0.006"/>
+  <testcase name="uiState emits error when usecase returns null" classname="com.example.presentation.detail.PokemonDetailViewModelTest" time="0.003"/>
+  <testcase name="initial state is loading" classname="com.example.presentation.detail.PokemonDetailViewModelTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
