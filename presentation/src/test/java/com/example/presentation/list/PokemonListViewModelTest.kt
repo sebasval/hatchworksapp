@@ -11,28 +11,24 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.StandardTestDispatcher
+import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.test.setMain
-import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
-import org.junit.Before
 import org.junit.Test
 
 @OptIn(ExperimentalCoroutinesApi::class)
 class PokemonListViewModelTest {
 
-    private val testDispatcher = StandardTestDispatcher()
-
-    @Before
-    fun setup() {
-        Dispatchers.setMain(testDispatcher)
-    }
-
-    @After
-    fun tearDown() {
-        Dispatchers.resetMain()
+    private fun providesTestScope(testBody: suspend TestScope.() -> Unit) = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        try {
+            testBody()
+        } finally {
+            Dispatchers.resetMain()
+        }
     }
 
     private fun providesUseCase(): IGetPokemonListUseCase = mockk(relaxed = true)
@@ -50,7 +46,7 @@ class PokemonListViewModelTest {
         (1..count).map { providesPokemon(id = it, name = "pokemon$it") }
 
     @Test
-    fun `initial state is loading`() = runTest {
+    fun `initial state is loading`() = providesTestScope {
         val useCase = providesUseCase()
         coEvery { useCase.invoke() } returns flowOf(emptyList())
 
@@ -60,13 +56,13 @@ class PokemonListViewModelTest {
     }
 
     @Test
-    fun `uiState emits success when usecase returns list`() = runTest {
+    fun `uiState emits success when usecase returns list`() = providesTestScope {
         val useCase = providesUseCase()
         val pokemonList = providesPokemonList(2)
         coEvery { useCase.invoke() } returns flowOf(pokemonList)
 
         val viewModel = providesViewModel(useCase)
-        testDispatcher.scheduler.advanceUntilIdle()
+        testScheduler.advanceUntilIdle()
 
         viewModel.uiState.test {
             val state = awaitItem()
@@ -76,12 +72,12 @@ class PokemonListViewModelTest {
     }
 
     @Test
-    fun `uiState emits error when usecase throws exception`() = runTest {
+    fun `uiState emits error when usecase throws exception`() = providesTestScope {
         val useCase = providesUseCase()
         coEvery { useCase.invoke() } returns flow { throw RuntimeException("Network error") }
 
         val viewModel = providesViewModel(useCase)
-        testDispatcher.scheduler.advanceUntilIdle()
+        testScheduler.advanceUntilIdle()
 
         viewModel.uiState.test {
             val state = awaitItem()
@@ -91,16 +87,16 @@ class PokemonListViewModelTest {
     }
 
     @Test
-    fun `refresh calls usecase refresh`() = runTest {
+    fun `refresh calls usecase refresh`() = providesTestScope {
         val useCase = providesUseCase()
         coEvery { useCase.invoke() } returns flowOf(emptyList())
         coEvery { useCase.refresh() } returns Unit
 
         val viewModel = providesViewModel(useCase)
-        testDispatcher.scheduler.advanceUntilIdle()
+        testScheduler.advanceUntilIdle()
 
         viewModel.refresh()
-        testDispatcher.scheduler.advanceUntilIdle()
+        testScheduler.advanceUntilIdle()
 
         coVerify { useCase.refresh() }
     }
