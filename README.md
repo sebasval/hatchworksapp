@@ -2,9 +2,25 @@
 
 A native Android Pokédex application built with modern Android development practices, demonstrating Clean Architecture, offline-first strategy, and comprehensive testing.
 
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8d6da9c4-c2b7-4b56-a5f3-d1e7a6d32c26" width="280" alt="Pokemon List Screen"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/c0b8b42d-bf3e-4234-b84f-bbe74dce9a7c" width="280" alt="Pokemon Detail Screen"/>
+</p>
+
+<p align="center">
+  <em>List Screen with Featured Pokemon & Search</em>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>Detail Screen with Stats & Info</em>
+</p>
+
 ## Features
 
 - Browse a list of Pokémon with images and IDs
+- **Featured Pokemon** - Random Pokemon highlighted as "Pokemon of the day"
+- **Search** - Filter Pokemon by name or ID
 - View detailed information for each Pokémon including stats, types, and abilities
 - Offline-first: Data is cached locally and works without internet connection
 - Pull-to-refresh to update data from the API
