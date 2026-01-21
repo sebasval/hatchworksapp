@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.domain.usecase.GetPokemonListUseCaseImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-01-20T20:42:33" hostname="192.168.2.28" time="0.011">
+<testsuite name="com.example.domain.usecase.GetPokemonListUseCaseImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-01-21T13:24:35" hostname="192.168.2.28" time="0.013">
   <properties/>
-  <testcase name="invoke returns pokemon list from repository" classname="com.example.domain.usecase.GetPokemonListUseCaseImplTest" time="0.005"/>
-  <testcase name="invoke emits empty list when repository returns empty" classname="com.example.domain.usecase.GetPokemonListUseCaseImplTest" time="0.003"/>
-  <testcase name="refresh calls repository refresh" classname="com.example.domain.usecase.GetPokemonListUseCaseImplTest" time="0.003"/>
+  <testcase name="invoke returns pokemon list from repository" classname="com.example.domain.usecase.GetPokemonListUseCaseImplTest" time="0.007"/>
+  <testcase name="invoke emits empty list when repository returns empty" classname="com.example.domain.usecase.GetPokemonListUseCaseImplTest" time="0.002"/>
+  <testcase name="refresh calls repository refresh" classname="com.example.domain.usecase.GetPokemonListUseCaseImplTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

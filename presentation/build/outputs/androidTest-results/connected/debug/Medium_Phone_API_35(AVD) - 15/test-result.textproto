@@ -1,0 +1,483 @@
+# 2026-01-21T13:23:00.733361Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 9
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "PokemonDetailScreenTest"
+    test_package: "com.example.presentation.detail"
+    test_method: "pokemonDetailScreen_displaysPokemonDetail"
+    start_time {
+      seconds: 1769001768
+      nanos: 761000000
+    }
+    end_time {
+      seconds: 1769001771
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.presentation.detail.PokemonDetailScreenTest-pokemonDetailScreen_displaysPokemonDetail.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PokemonDetailScreenTest"
+    test_package: "com.example.presentation.detail"
+    test_method: "pokemonDetailScreen_displaysErrorWhenPokemonNotFound"
+    start_time {
+      seconds: 1769001771
+      nanos: 14000000
+    }
+    end_time {
+      seconds: 1769001772
+      nanos: 137000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.presentation.detail.PokemonDetailScreenTest-pokemonDetailScreen_displaysErrorWhenPokemonNotFound.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PokemonDetailScreenTest"
+    test_package: "com.example.presentation.detail"
+    test_method: "pokemonDetailScreen_displaysHeightAndWeight"
+    start_time {
+      seconds: 1769001772
+      nanos: 139000000
+    }
+    end_time {
+      seconds: 1769001772
+      nanos: 782000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.presentation.detail.PokemonDetailScreenTest-pokemonDetailScreen_displaysHeightAndWeight.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PokemonDetailScreenTest"
+    test_package: "com.example.presentation.detail"
+    test_method: "pokemonDetailScreen_backButton_triggersCallback"
+    start_time {
+      seconds: 1769001773
+      nanos: 345000000
+    }
+    end_time {
+      seconds: 1769001773
+      nanos: 917000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.presentation.detail.PokemonDetailScreenTest-pokemonDetailScreen_backButton_triggersCallback.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PokemonDetailScreenTest"
+    test_package: "com.example.presentation.detail"
+    test_method: "pokemonDetailScreen_displaysStats"
+    start_time {
+      seconds: 1769001774
+      nanos: 489000000
+    }
+    end_time {
+      seconds: 1769001775
+      nanos: 530000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.presentation.detail.PokemonDetailScreenTest-pokemonDetailScreen_displaysStats.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PokemonListScreenTest"
+    test_package: "com.example.presentation.list"
+    test_method: "pokemonListScreen_displaysFeaturedPokemon"
+    start_time {
+      seconds: 1769001775
+      nanos: 531000000
+    }
+    end_time {
+      seconds: 1769001776
+      nanos: 733000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.presentation.list.PokemonListScreenTest-pokemonListScreen_displaysFeaturedPokemon.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PokemonListScreenTest"
+    test_package: "com.example.presentation.list"
+    test_method: "pokemonListScreen_displaysPokemonList"
+    start_time {
+      seconds: 1769001776
+      nanos: 734000000
+    }
+    end_time {
+      seconds: 1769001777
+      nanos: 425000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.presentation.list.PokemonListScreenTest-pokemonListScreen_displaysPokemonList.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PokemonListScreenTest"
+    test_package: "com.example.presentation.list"
+    test_method: "pokemonListScreen_clickOnPokemon_triggersCallback"
+    start_time {
+      seconds: 1769001777
+      nanos: 965000000
+    }
+    end_time {
+      seconds: 1769001778
+      nanos: 654000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.presentation.list.PokemonListScreenTest-pokemonListScreen_clickOnPokemon_triggersCallback.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PokemonListScreenTest"
+    test_package: "com.example.presentation.list"
+    test_method: "pokemonListScreen_displaysHeader"
+    start_time {
+      seconds: 1769001779
+      nanos: 228000000
+    }
+    end_time {
+      seconds: 1769001780
+      nanos: 319000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/logcat-com.example.presentation.list.PokemonListScreenTest-pokemonListScreen_displaysHeader.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_35(AVD) - 15/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

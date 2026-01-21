@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.data.local.datasource.LocalDataSourceImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-01-21T13:24:41" hostname="192.168.2.28" time="1.054">
+  <properties/>
+  <testcase name="savePokemonList calls dao insert" classname="com.example.data.local.datasource.LocalDataSourceImplTest" time="0.978"/>
+  <testcase name="getPokemonList returns flow from dao" classname="com.example.data.local.datasource.LocalDataSourceImplTest" time="0.06"/>
+  <testcase name="getPokemonDetail returns flow from dao" classname="com.example.data.local.datasource.LocalDataSourceImplTest" time="0.004"/>
+  <testcase name="savePokemonDetail calls dao insert" classname="com.example.data.local.datasource.LocalDataSourceImplTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

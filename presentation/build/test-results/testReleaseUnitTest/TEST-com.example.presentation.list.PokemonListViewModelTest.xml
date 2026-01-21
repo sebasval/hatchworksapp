@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.presentation.list.PokemonListViewModelTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-01-21T13:24:41" hostname="192.168.2.28" time="0.08">
+  <properties/>
+  <testcase name="refresh calls usecase refresh" classname="com.example.presentation.list.PokemonListViewModelTest" time="0.06"/>
+  <testcase name="searchQuery updates filteredPokemonList" classname="com.example.presentation.list.PokemonListViewModelTest" time="0.004"/>
+  <testcase name="searchQuery with id filters by id" classname="com.example.presentation.list.PokemonListViewModelTest" time="0.002"/>
+  <testcase name="empty searchQuery returns all pokemon" classname="com.example.presentation.list.PokemonListViewModelTest" time="0.002"/>
+  <testcase name="uiState emits error when usecase throws exception" classname="com.example.presentation.list.PokemonListViewModelTest" time="0.002"/>
+  <testcase name="featuredPokemon is set when list is loaded" classname="com.example.presentation.list.PokemonListViewModelTest" time="0.001"/>
+  <testcase name="searchQuery is case insensitive" classname="com.example.presentation.list.PokemonListViewModelTest" time="0.002"/>
+  <testcase name="initial state is loading" classname="com.example.presentation.list.PokemonListViewModelTest" time="0.001"/>
+  <testcase name="uiState emits success when usecase returns list" classname="com.example.presentation.list.PokemonListViewModelTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

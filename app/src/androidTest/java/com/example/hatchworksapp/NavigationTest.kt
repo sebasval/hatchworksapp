@@ -3,6 +3,7 @@ package com.example.hatchworksapp
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
@@ -31,7 +32,7 @@ class NavigationTest {
 
     private fun navigateToFirstPokemonDetail() {
         waitForPokemonListToLoad()
-        composeTestRule.onNodeWithText(providesFirstPokemonId()).performClick()
+        composeTestRule.onAllNodesWithText(providesFirstPokemonId()).onFirst().performClick()
         composeTestRule.waitForIdle()
     }
 
@@ -67,7 +68,7 @@ class NavigationTest {
                 .fetchSemanticsNodes().isNotEmpty()
         }
 
-        composeTestRule.onNodeWithText("Bulbasaur").assertIsDisplayed()
+        composeTestRule.onAllNodesWithText("Bulbasaur").onFirst().assertIsDisplayed()
         composeTestRule.onNodeWithText("Base Stats").assertIsDisplayed()
         composeTestRule.onNodeWithText("Info").assertIsDisplayed()
         composeTestRule.onNodeWithContentDescription("Back").assertIsDisplayed()

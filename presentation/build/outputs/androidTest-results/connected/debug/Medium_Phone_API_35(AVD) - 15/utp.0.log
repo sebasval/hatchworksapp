@@ -1,0 +1,39 @@
+INFO: Constructing runner from config.
+INFO: Configuring Android Instrumentation driver: android_instrumentation_runtime {
+  instrumentation_info {
+    app_package: "com.example.presentation.test"
+    test_package: "com.example.presentation.test"
+    test_runner_class: "androidx.test.runner.AndroidJUnitRunner"
+  }
+  instrumentation_args {
+    args_map {
+      key: "additionalTestOutputDir"
+      value: "/sdcard/Android/media/com.example.presentation.test/additional_test_output"
+    }
+  }
+}
+am_instrument_timeout: 31536000
+
+INFO: Configuring AndroidTestApkInstallerPlugin: apks_to_install {
+  apk_paths: "/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/apk/androidTest/debug/presentation-debug-androidTest.apk"
+  install_options {
+  }
+  uninstall_after_test: true
+}
+
+INFO: No installables found in test fixture. Nothing to install.
+INFO: Installing [/Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/apk/androidTest/debug/presentation-debug-androidTest.apk] on device emulator-5554.
+INFO: Start logcat streaming.
+INFO: Running Android Instrumentation driver.
+INFO: Copying files from device to host: /sdcard/Android/media/com.example.presentation.test/additional_test_output to /Users/camilagarciahernandez/AndroidStudioProjects/HatchWorksApp/presentation/build/outputs/connected_android_test_additional_output/debugAndroidTest/connected/Medium_Phone_API_35(AVD) - 15
+INFO: Stop logcat streaming.
+INFO: Uninstalling com.example.presentation.test for device emulator-5554.
+INFO: Execute com.example.presentation.detail.PokemonDetailScreenTest.pokemonDetailScreen_displaysPokemonDetail: PASSED
+INFO: Execute com.example.presentation.detail.PokemonDetailScreenTest.pokemonDetailScreen_displaysErrorWhenPokemonNotFound: PASSED
+INFO: Execute com.example.presentation.detail.PokemonDetailScreenTest.pokemonDetailScreen_displaysHeightAndWeight: PASSED
+INFO: Execute com.example.presentation.detail.PokemonDetailScreenTest.pokemonDetailScreen_backButton_triggersCallback: PASSED
+INFO: Execute com.example.presentation.detail.PokemonDetailScreenTest.pokemonDetailScreen_displaysStats: PASSED
+INFO: Execute com.example.presentation.list.PokemonListScreenTest.pokemonListScreen_displaysFeaturedPokemon: PASSED
+INFO: Execute com.example.presentation.list.PokemonListScreenTest.pokemonListScreen_displaysPokemonList: PASSED
+INFO: Execute com.example.presentation.list.PokemonListScreenTest.pokemonListScreen_clickOnPokemon_triggersCallback: PASSED
+INFO: Execute com.example.presentation.list.PokemonListScreenTest.pokemonListScreen_displaysHeader: PASSED

@@ -1,0 +1,39 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.presentation.test.presentation-mergeDebugAndroidTestResources-62:/values-v28/values-v28.xml",
+            "map": [
+                {
+                    "source": "/Users/camilagarciahernandez/.gradle/caches/8.10.2/transforms/06047af5b75bdb811c4bd3989092b039/transformed/appcompat-1.6.1/res/values-v28/values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,397",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,392,584"
+                    }
+                },
+                {
+                    "source": "/Users/camilagarciahernandez/.gradle/caches/8.10.2/transforms/8b45eb570e6aed188b4b583e6c8741af/transformed/core-1.6.1/res/values-v28/values.xml",
+                    "from": {
+                        "startLines": "4,13",
+                        "startColumns": "0,0",
+                        "startOffsets": "146,625",
+                        "endLines": "12,21",
+                        "endColumns": "8,8",
+                        "endOffsets": "624,1101"
+                    },
+                    "to": {
+                        "startLines": "12,21",
+                        "startColumns": "4,4",
+                        "startOffsets": "589,1072",
+                        "endLines": "20,29",
+                        "endColumns": "8,8",
+                        "endOffsets": "1067,1548"
+                    }
+                }
+            ]
+        }
+    ]
+}

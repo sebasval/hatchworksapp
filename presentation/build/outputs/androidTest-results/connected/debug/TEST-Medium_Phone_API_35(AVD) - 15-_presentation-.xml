@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.presentation.detail.PokemonDetailScreenTest" tests="9" failures="0" errors="0" skipped="0" time="11.946" timestamp="2026-01-21T13:23:00" hostname="localhost">
+  <properties>
+    <property name="device" value="Medium_Phone_API_35(AVD) - 15" />
+    <property name="flavor" value="" />
+    <property name="project" value=":presentation" />
+  </properties>
+  <testcase name="pokemonDetailScreen_displaysPokemonDetail" classname="com.example.presentation.detail.PokemonDetailScreenTest" time="2.24" />
+  <testcase name="pokemonDetailScreen_displaysErrorWhenPokemonNotFound" classname="com.example.presentation.detail.PokemonDetailScreenTest" time="1.124" />
+  <testcase name="pokemonDetailScreen_displaysHeightAndWeight" classname="com.example.presentation.detail.PokemonDetailScreenTest" time="0.644" />
+  <testcase name="pokemonDetailScreen_backButton_triggersCallback" classname="com.example.presentation.detail.PokemonDetailScreenTest" time="0.572" />
+  <testcase name="pokemonDetailScreen_displaysStats" classname="com.example.presentation.detail.PokemonDetailScreenTest" time="1.042" />
+  <testcase name="pokemonListScreen_displaysFeaturedPokemon" classname="com.example.presentation.list.PokemonListScreenTest" time="1.202" />
+  <testcase name="pokemonListScreen_displaysPokemonList" classname="com.example.presentation.list.PokemonListScreenTest" time="0.692" />
+  <testcase name="pokemonListScreen_clickOnPokemon_triggersCallback" classname="com.example.presentation.list.PokemonListScreenTest" time="0.692" />
+  <testcase name="pokemonListScreen_displaysHeader" classname="com.example.presentation.list.PokemonListScreenTest" time="1.092" />
+</testsuite>

@@ -16,6 +16,7 @@ import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.test.setMain
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -44,6 +45,14 @@ class PokemonListViewModelTest {
 
     private fun providesPokemonList(count: Int = 3): List<Pokemon> =
         (1..count).map { providesPokemon(id = it, name = "pokemon$it") }
+
+    private fun providesPokemonListWithNames(): List<Pokemon> = listOf(
+        providesPokemon(id = 1, name = "bulbasaur"),
+        providesPokemon(id = 2, name = "ivysaur"),
+        providesPokemon(id = 3, name = "venusaur"),
+        providesPokemon(id = 25, name = "pikachu"),
+        providesPokemon(id = 6, name = "charizard")
+    )
 
     @Test
     fun `initial state is loading`() = providesTestScope {
@@ -99,5 +108,98 @@ class PokemonListViewModelTest {
         testScheduler.advanceUntilIdle()
 
         coVerify { useCase.refresh() }
+    }
+
+    @Test
+    fun `featuredPokemon is set when list is loaded`() = providesTestScope {
+        val useCase = providesUseCase()
+        val pokemonList = providesPokemonList(5)
+        coEvery { useCase.invoke() } returns flowOf(pokemonList)
+
+        val viewModel = providesViewModel(useCase)
+        testScheduler.advanceUntilIdle()
+
+        viewModel.featuredPokemon.test {
+            val featured = awaitItem()
+            assertNotNull(featured)
+            assertTrue(pokemonList.contains(featured))
+        }
+    }
+
+    @Test
+    fun `searchQuery updates filteredPokemonList`() = providesTestScope {
+        val useCase = providesUseCase()
+        val pokemonList = providesPokemonListWithNames()
+        coEvery { useCase.invoke() } returns flowOf(pokemonList)
+
+        val viewModel = providesViewModel(useCase)
+        testScheduler.advanceUntilIdle()
+
+        viewModel.onSearchQueryChanged("pika")
+        testScheduler.advanceUntilIdle()
+
+        viewModel.filteredPokemonList.test {
+            val filtered = awaitItem()
+            assertEquals(1, filtered.size)
+            assertEquals("pikachu", filtered[0].name)
+        }
+    }
+
+    @Test
+    fun `searchQuery with id filters by id`() = providesTestScope {
+        val useCase = providesUseCase()
+        val pokemonList = providesPokemonListWithNames()
+        coEvery { useCase.invoke() } returns flowOf(pokemonList)
+
+        val viewModel = providesViewModel(useCase)
+        testScheduler.advanceUntilIdle()
+
+        viewModel.onSearchQueryChanged("25")
+        testScheduler.advanceUntilIdle()
+
+        viewModel.filteredPokemonList.test {
+            val filtered = awaitItem()
+            assertEquals(1, filtered.size)
+            assertEquals(25, filtered[0].id)
+        }
+    }
+
+    @Test
+    fun `empty searchQuery returns all pokemon`() = providesTestScope {
+        val useCase = providesUseCase()
+        val pokemonList = providesPokemonListWithNames()
+        coEvery { useCase.invoke() } returns flowOf(pokemonList)
+
+        val viewModel = providesViewModel(useCase)
+        testScheduler.advanceUntilIdle()
+
+        viewModel.onSearchQueryChanged("pika")
+        testScheduler.advanceUntilIdle()
+        viewModel.onSearchQueryChanged("")
+        testScheduler.advanceUntilIdle()
+
+        viewModel.filteredPokemonList.test {
+            val filtered = awaitItem()
+            assertEquals(pokemonList.size, filtered.size)
+        }
+    }
+
+    @Test
+    fun `searchQuery is case insensitive`() = providesTestScope {
+        val useCase = providesUseCase()
+        val pokemonList = providesPokemonListWithNames()
+        coEvery { useCase.invoke() } returns flowOf(pokemonList)
+
+        val viewModel = providesViewModel(useCase)
+        testScheduler.advanceUntilIdle()
+
+        viewModel.onSearchQueryChanged("BULBA")
+        testScheduler.advanceUntilIdle()
+
+        viewModel.filteredPokemonList.test {
+            val filtered = awaitItem()
+            assertEquals(1, filtered.size)
+            assertEquals("bulbasaur", filtered[0].name)
+        }
     }
 }

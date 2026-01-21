@@ -2,6 +2,8 @@ package com.example.presentation.list
 
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import com.example.domain.model.Pokemon
@@ -52,8 +54,9 @@ class PokemonListScreenTest {
         composeTestRule.waitForIdle()
 
         composeTestRule.onNodeWithText("Pokédex").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Pokemon1").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Pokemon2").assertIsDisplayed()
+        composeTestRule.onNodeWithText("All Pokémon").assertIsDisplayed()
+        composeTestRule.onAllNodesWithText("Pokemon1").onFirst().assertIsDisplayed()
+        composeTestRule.onAllNodesWithText("Pokemon2").onFirst().assertIsDisplayed()
     }
 
     @Test
@@ -76,13 +79,13 @@ class PokemonListScreenTest {
 
         composeTestRule.waitForIdle()
 
-        composeTestRule.onNodeWithText("Pikachu").performClick()
+        composeTestRule.onAllNodesWithText("Pikachu").onFirst().performClick()
 
         assert(clickedId == 25)
     }
 
     @Test
-    fun pokemonListScreen_displaysEmptyState() {
+    fun pokemonListScreen_displaysHeader() {
         val useCase = providesUseCase()
         coEvery { useCase.invoke() } returns flowOf(emptyList())
 
@@ -100,5 +103,28 @@ class PokemonListScreenTest {
         composeTestRule.waitForIdle()
 
         composeTestRule.onNodeWithText("Pokédex").assertIsDisplayed()
+    }
+
+    @Test
+    fun pokemonListScreen_displaysFeaturedPokemon() {
+        val useCase = providesUseCase()
+        val pokemonList = listOf(providesPokemon(id = 1, name = "bulbasaur"))
+        coEvery { useCase.invoke() } returns flowOf(pokemonList)
+
+        val viewModel = providesViewModel(useCase)
+
+        composeTestRule.setContent {
+            HatchWorksAppTheme {
+                PokemonListScreen(
+                    onPokemonClick = {},
+                    viewModel = viewModel
+                )
+            }
+        }
+
+        composeTestRule.waitForIdle()
+
+        composeTestRule.onNodeWithText("Featured").assertIsDisplayed()
+        composeTestRule.onNodeWithText("Pokémon of the day").assertIsDisplayed()
     }
 }

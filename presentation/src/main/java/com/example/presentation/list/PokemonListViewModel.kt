@@ -2,6 +2,7 @@ package com.example.presentation.list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.domain.model.Pokemon
 import com.example.domain.usecase.IGetPokemonListUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -22,6 +23,17 @@ class PokemonListViewModel(
     private val _isRefreshing = MutableStateFlow(false)
     val isRefreshing: StateFlow<Boolean> = _isRefreshing.asStateFlow()
 
+    private val _searchQuery = MutableStateFlow("")
+    val searchQuery: StateFlow<String> = _searchQuery.asStateFlow()
+
+    private var allPokemonList: List<Pokemon> = emptyList()
+
+    private val _filteredPokemonList = MutableStateFlow<List<Pokemon>>(emptyList())
+    val filteredPokemonList: StateFlow<List<Pokemon>> = _filteredPokemonList.asStateFlow()
+
+    private val _featuredPokemon = MutableStateFlow<Pokemon?>(null)
+    val featuredPokemon: StateFlow<Pokemon?> = _featuredPokemon.asStateFlow()
+
     init {
         loadPokemonList()
     }
@@ -30,7 +42,10 @@ class PokemonListViewModel(
         getPokemonListUseCase()
             .onStart { _uiState.value = PokemonListUiState.Loading }
             .onEach { pokemonList ->
+                allPokemonList = pokemonList
                 _uiState.value = PokemonListUiState.Success(pokemonList)
+                selectFeaturedPokemon(pokemonList)
+                applyFilter()
             }
             .catch { exception ->
                 _uiState.value = PokemonListUiState.Error(
@@ -38,6 +53,29 @@ class PokemonListViewModel(
                 )
             }
             .launchIn(viewModelScope)
+    }
+
+    private fun applyFilter() {
+        val query = _searchQuery.value
+        _filteredPokemonList.value = if (query.isBlank()) {
+            allPokemonList
+        } else {
+            allPokemonList.filter { pokemon ->
+                pokemon.name.contains(query, ignoreCase = true) ||
+                    pokemon.id.toString().contains(query)
+            }
+        }
+    }
+
+    private fun selectFeaturedPokemon(pokemonList: List<Pokemon>) {
+        if (pokemonList.isNotEmpty() && _featuredPokemon.value == null) {
+            _featuredPokemon.value = pokemonList.random()
+        }
+    }
+
+    fun onSearchQueryChanged(query: String) {
+        _searchQuery.value = query
+        applyFilter()
     }
 
     fun refresh() {

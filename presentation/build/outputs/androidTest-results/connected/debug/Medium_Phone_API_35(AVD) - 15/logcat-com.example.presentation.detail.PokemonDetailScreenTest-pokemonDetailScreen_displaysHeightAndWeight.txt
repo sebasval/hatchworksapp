@@ -1,0 +1,86 @@
+01-21 08:22:48.812 17417 17434 I TestRunner: started: pokemonDetailScreen_displaysHeightAndWeight(com.example.presentation.detail.PokemonDetailScreenTest)
+01-21 08:22:48.814 17417 17434 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@84da893]
+01-21 08:22:48.815 17417 17434 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+01-21 08:22:48.817   545  2160 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@577dc81e does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+01-21 08:22:48.826  1212  1212 W SplitSelectStateCtor: Missing session instanceIds
+01-21 08:22:48.826  1212  1212 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+01-21 08:22:48.833  1212  1212 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=113, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.presentation.test/androidx.activity.ComponentActivity }
+01-21 08:22:48.838 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@e61c33d in: PRE_ON_CREATE
+01-21 08:22:48.840   389   389 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+01-21 08:22:48.842 17417 17417 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+01-21 08:22:48.852 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@e61c33d in: CREATED
+01-21 08:22:48.852 17417 17417 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@e61c33d
+01-21 08:22:48.855 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@e61c33d in: STARTED
+01-21 08:22:48.856 17417 17417 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@e61c33d
+01-21 08:22:48.860 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@e61c33d in: RESUMED
+01-21 08:22:48.862 17417 17417 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@e61c33d
+01-21 08:22:48.905   545   568 W ziparchive: Unable to open '/data/app/~~_RgRFkdpjuxVzypb_SWbcw==/com.example.presentation.test-s84CZniISWJixU0I2i7k0w==/base.dm': No such file or directory
+01-21 08:22:48.906   545   568 I ActivityTaskManager: Displayed com.example.presentation.test/androidx.activity.ComponentActivity for user 0: +85ms
+01-21 08:22:48.917   545   683 I ImeTracker: com.example.presentation.test:d8db2fe5: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+01-21 08:22:48.918   545   683 I ImeTracker: com.example.presentation.test:d8db2fe5: onCancelled at PHASE_SERVER_SHOULD_HIDE
+01-21 08:22:48.920  6050  6050 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157
+01-21 08:22:48.930  6050  6050 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+01-21 08:22:48.930  6050  6050 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.example.presentation.test, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+01-21 08:22:48.933  6050  6050 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+01-21 08:22:48.934  6050  6050 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+01-21 08:22:49.153  1212  1212 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+01-21 08:22:49.158  1212  1212 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+01-21 08:22:49.175  1212  1212 D BaseDepthController: setSurface:
+01-21 08:22:49.175  1212  1212 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+01-21 08:22:49.175  1212  1212 D BaseDepthController: 	mSurface: null
+01-21 08:22:49.175  1212  1212 D BaseDepthController: mSurface is null and mCurrentBlur is: 23
+01-21 08:22:49.175  1212  1212 D StatsLog: LAUNCHER_ONSTOP
+01-21 08:22:49.175  1212  1858 D OneSearchSuggestProvider: Shut down the binder channel
+01-21 08:22:49.177  1212  2851 I IPCThreadState: oneway function results for code 2 on binder at 0xb40000759438d370 will be dropped but finished with status UNKNOWN_TRANSACTION
+01-21 08:22:49.180  1212  2293 D GmsPlayProvider: Shut down the binder channel
+01-21 08:22:49.180  1212  1212 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+01-21 08:22:49.188   929  1026 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@aa9dd61
+01-21 08:22:49.199   545  1531 W InputManager-JNI: Input channel object '2a9bcfb Splash Screen com.example.presentation.test (client)' was disposed without first being removed with the input manager!
+01-21 08:22:49.320   545  1531 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@577dc81e does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+01-21 08:22:49.332 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@e61c33d in: PAUSED
+01-21 08:22:49.332 17417 17417 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@e61c33d
+01-21 08:22:49.339 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@aa1558d in: PRE_ON_CREATE
+01-21 08:22:49.339 17417 17417 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.presentation.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.presentation.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@aa1558d
+01-21 08:22:49.340   389   389 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+01-21 08:22:49.346 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@aa1558d in: CREATED
+01-21 08:22:49.346 17417 17417 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.presentation.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.presentation.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@aa1558d
+01-21 08:22:49.347 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@aa1558d in: STARTED
+01-21 08:22:49.348 17417 17417 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.presentation.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.presentation.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@aa1558d
+01-21 08:22:49.351 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@aa1558d in: RESUMED
+01-21 08:22:49.351 17417 17417 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.presentation.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.presentation.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@aa1558d
+01-21 08:22:49.379   545   568 I ActivityTaskManager: Displayed com.example.presentation.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity for user 0: +53ms
+01-21 08:22:49.387 17417 17417 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+01-21 08:22:49.389 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@e61c33d in: STOPPED
+01-21 08:22:49.389 17417 17417 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@e61c33d
+01-21 08:22:49.403   929  1073 D EGL_emulation: app_time_stats: avg=79.66ms min=1.55ms max=876.19ms count=12
+01-21 08:22:49.406  1212  1212 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=7, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity }
+01-21 08:22:49.407   389   389 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+01-21 08:22:49.412 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@e61c33d in: DESTROYED
+01-21 08:22:49.412 17417 17417 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+01-21 08:22:49.413 17417 17417 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@c259371
+01-21 08:22:49.419   545  2162 W InputManager-JNI: Input channel object 'd80f165 com.example.presentation.test/androidx.activity.ComponentActivity (client)' was disposed without first being removed with the input manager!
+01-21 08:22:49.422 17417 17417 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@aa1558d in: PAUSED
+01-21 08:22:49.434  1212  1212 D StatsLog: LAUNCHER_ONRESUME
+01-21 08:22:49.436 17417 17434 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@84da893]
+01-21 08:22:49.437   545  1473 W AppSearchIcing: icing-search-engine.cc:321: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: AppSearch 0-state cache not available, fallback to AGA
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: java.util.concurrent.CompletionException: java.util.NoSuchElementException: No value present
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:308)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:323)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:684)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:486)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2138)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at com.google.android.apps.nexuslauncher.allapps.E0.onResult(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:67)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1.lambda$onResult$0(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:144)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1.$r8$lambda$CEk3q8sDAQVhU3rQwVueB8FAj_M(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:1)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1$$ExternalSyntheticLambda0.run(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:22)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at android.os.Handler.handleCallback(Handler.java:959)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at android.os.Looper.loopOnce(Looper.java:232)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at android.os.Looper.loop(Looper.java:317)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: Caused by: java.util.NoSuchElementException: No value present
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at java.util.Optional.get(Optional.java:143)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	at com.google.android.apps.nexuslauncher.allapps.E0.onResult(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:28)
+01-21 08:22:49.438  1212  1858 D OneSearchSuggestProvider: 	... 8 more
+01-21 08:22:49.439 17417 17434 I TestRunner: finished: pokemonDetailScreen_displaysHeightAndWeight(com.example.presentation.detail.PokemonDetailScreenTest)

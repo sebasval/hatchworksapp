@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.data.repository.PokemonRepositoryImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-01-21T13:24:42" hostname="192.168.2.28" time="0.082">
+  <properties/>
+  <testcase name="refreshPokemonList fetches from remote and saves to local" classname="com.example.data.repository.PokemonRepositoryImplTest" time="0.048"/>
+  <testcase name="getPokemonDetail emits cached data from local data source" classname="com.example.data.repository.PokemonRepositoryImplTest" time="0.01"/>
+  <testcase name="refreshPokemonDetail fetches from remote and saves to local" classname="com.example.data.repository.PokemonRepositoryImplTest" time="0.006"/>
+  <testcase name="getPokemonList emits cached data from local data source" classname="com.example.data.repository.PokemonRepositoryImplTest" time="0.018"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
